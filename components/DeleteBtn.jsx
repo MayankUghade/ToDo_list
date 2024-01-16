@@ -6,9 +6,12 @@ export default function DeleteBtn({ id }) {
     const confirmed = confirm("Are you sure");
 
     if (confirmed) {
-      const res = await fetch(`http://localhost:3000/api/topics?id=${id}`, {
-        method: "DELETE",
-      });
+      const res = await fetch(
+        `https://to-do-tan-nine.vercel.app/api/topics?id=${id}`,
+        {
+          method: "DELETE",
+        }
+      );
 
       location.reload();
     }

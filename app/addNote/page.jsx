@@ -20,7 +20,7 @@ export default function Addnote() {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/topics", {
+      const res = await fetch("https://to-do-tan-nine.vercel.app/api/topics", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

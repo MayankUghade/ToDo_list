@@ -3,7 +3,7 @@ import Edit_data from "@/components/Edit_data";
 const fetchData = async (id) => {
   try {
     const res = await fetch(
-      `http://localhost:3000/api/topics/${id}?timestamp=${Date.now()}`
+      `https://to-do-tan-nine.vercel.app/api/topics/${id}?timestamp=${Date.now()}`
     );
     if (!res.ok) {
       throw new Error("Not able to fetch data");

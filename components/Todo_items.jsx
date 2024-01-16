@@ -15,9 +15,12 @@ const Todo_items = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/topics", {
-          cache: "no-store",
-        });
+        const response = await fetch(
+          "https://to-do-tan-nine.vercel.app/api/topics",
+          {
+            cache: "no-store",
+          }
+        );
 
         if (!response.ok) {
           throw new Error("Failed to fetch topics");
